@@ -1,0 +1,7 @@
+language: java
+script:
+  - git clone https://github.com/csie-asia-Java-Programming-1/TestingData.git
+  - cp -r TestingData/week09-20161128/ week09-20161128/bot/
+  - cd week09-20161128/
+  - chmod +x bot/TA.sh
+  - ./bot/TA.sh
