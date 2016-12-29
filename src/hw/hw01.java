@@ -12,10 +12,34 @@ public class hw01 {
 		// TODO Auto-generated method stub
 		Scanner scn=new Scanner(System.in);
 		int n=scn.nextInt();
-		fun1(n);
+		int sum = 0;
+		int m=0;
+		fun1(n,sum,m);
 	}
-	public static void fun1(int a){
-		
+	public static void fun1(int a,int b,int c){
+		for (int i = 1; i < a; i++) {
+			c = 1;
+			b = 0;
+			for (int j = i; j < a; j++) {
+				b += j;
+				if (b == a) {
+					System.out.print("=");
+					for (int e = i; e <= j; e++) {
+						
+						System.out.print(e);
+						if (e < j) {
+							System.out.print("+");
+						}
+					}
+					System.out.println();
+				}
+
+			}
+			
+		}
+		if (c ==0) {
+			System.out.println("no");
+		}
 	}
 
 }
